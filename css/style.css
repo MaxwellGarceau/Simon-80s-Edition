@@ -1,0 +1,221 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url("https://dl.dropboxusercontent.com/s/5y19p82qbdtorp2/80s-background.jpg?dl=0");
+    background-position: center;
+    background-attachment: center;
+    background-repeat: no-repeat;
+}
+
+.segment-center label {
+    font-size: 25px;
+    margin-top: 3px;
+}
+
+.segment-center h1 {
+    font-size: 110px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+
+.segment-center h3 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: 'Dynalight', cursive;
+    font-size: 40px;
+}
+
+.segment-center h4 {
+    font-size: 50px;
+}
+
+.control-buttons {
+    display: block;
+    margin: auto;
+}
+
+.control-buttons div:nth-child(1) {
+    padding-left: 4em;
+}
+
+.control-buttons div:nth-child(3) {
+    padding-right: 3em;
+}
+
+.circle {
+
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 16px;
+    margin: 50px auto;
+    min-width: 900px;
+    max-width: 1500px;
+    min-height: 900px;
+    max-height: 100%;
+    background-color: grey;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+
+/*Green*/
+
+.segment-upperleft {
+    float: left;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    border-style: solid;
+    border-width: 16px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    background: #006400;
+    position: absolute;
+}
+
+
+/*Red*/
+
+.segment-upperright {
+    float: right;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    height: 50%;
+    border-style: solid;
+    border-width: 16px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    background: #8B0000;
+    position: absolute;
+}
+
+
+/*Yellow*/
+
+.segment-lowerleft {
+    float: left;
+    top: 50%;
+    left: 0%;
+    width: 50%;
+    height: -50%;
+    border-style: solid;
+    border-width: 16px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    padding-bottom: 50%;
+    background: #CCCC00;
+    position: absolute;
+}
+
+
+/*Blue*/
+
+.segment-lowerright {
+    float: right;
+    right: 0%;
+    top: 50%;
+    width: 50%;
+    height: -50%;
+    border-style: solid;
+    border-width: 16px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    padding-bottom: 50%;
+    background: #00008B;
+    position: absolute;
+}
+
+.segment-center {
+    width: 40em;
+    height: 40em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 2;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 25px;
+    font-family: 'Geo', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#turn-num {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 17px;
+    text-align: center;
+    border-style: dashed;
+    background-color: rgba(230, 230, 230, 0.6);
+    margin-top: -25px;
+    padding: 10px;
+    height: 70px;
+    width: 45%;
+}
+
+#start,
+#strict {
+    font-size: 30px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+#start:focus,
+#strict:focus,
+#reset:focus,
+#eighties-sound-clips:focus {
+    outline: none;
+}
+
+#reset {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+}
+
+#eighties-sound-clips {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+
+/*Victory Animation*/
+
+
+/*
+#animation-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+}
+#victory-animation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: red;
+}
+*/

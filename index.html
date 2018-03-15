@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simon 80's Edition (Final)</title>
+    <meta charset="UTF-8">
+    <title>Simon Game</title>
+    <link rel="stylesheet" type="text/css" href="Simon.css">
+    <link href="https://fonts.googleapis.com/css?family=Geo|Press+Start+2P|Orbitron|Dynalight" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="circle">
+            <div class="segment-upperleft color-buttons all-buttons" id="green" style="font-size: 72px; text-align: right;"></div>
+            <div class="segment-upperright color-buttons all-buttons" id="red"></div>
+            <div class="segment-lowerleft color-buttons all-buttons" id="yellow"></div>
+            <div class="segment-lowerright color-buttons all-buttons" id="blue"></div>
+            <div class="segment-center" id="controls">
+                <h1 style="font-family: 'Geo';">Simon</h1>
+                <h3>80's Edition</h3>
+                <div class="row control-buttons">
+                    <div class="col-xs-4">
+                        <h4>Start</h4>
+                        <button type="button" class="all-buttons" id="start">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="button" class="all-buttons" id="reset">Reset</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <h4>Strict</h4>
+                        <button type="button" class="all-buttons" id="strict">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" disabled id="turn-num" value="Press start!">
+                    <br>
+                    <label>Count</label>
+                </div>
+                <button id="eighties-sound-clips" class="all-buttons">True Survivor Mode</button>
+            </div>
+        </div>
+    </div>
+    <!--<div id ="animation-container">
+    <div id ="victory-animation">My animation will go here</div>
+</div>-->
+    <!--Simon Default Audio-->
+    <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" id="green-audio" class="color-button-audio"></audio>
+    <audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" id="red-audio" class="color-button-audio"></audio>
+    <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" id="yellow-audio" class="color-button-audio"></audio>
+    <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" id="blue-audio" class="color-button-audio"></audio>
+    <!--Misc Default Sounds-->
+    <audio src="https://dl.dropboxusercontent.com/s/uqfyv7juh0nz2l1/Mess%20Up%20%28Not%20Strict%29.mp3?dl=0" id="normal-mistake-sound"></audio>
+    <audio src="https://dl.dropboxusercontent.com/s/g7f2q0cgeo6wxes/Game%20Over%20%28Strict%29.mp3?dl=0" id="game-lose-sound"></audio>
+    <audio src="https://dl.dropboxusercontent.com/s/ivvx1oa19bhl1ar/Game%20Win.mp3?dl=0" id="game-win-sound"></audio>
+    <audio src="https://dl.dropboxusercontent.com/s/r7k31f7jkzk4oee/Round%20Win.mp3?dl=0" id="round-win-sound"></audio>
+    <!--80s Audio (True Survivor Sounds)-->
+    <audio src="https://dl.dropboxusercontent.com/s/kiogk1bkxu6ovwu/Green.mp3?dl=0" id="green-eighties-audio" class="color-button-audio"></audio>
+    <audio src="https://dl.dropboxusercontent.com/s/0kgamlu9b6t5s0l/Red.mp3?dl=0" id="red-eighties-audio" class="color-button-audio"></audio>
+    <audio src="https://dl.dropboxusercontent.com/s/bf9ao75z7wvidk4/Yellow.mp3?dl=0" id="yellow-eighties-audio" class="color-button-audio"></audio>
+    <audio src="https://dl.dropboxusercontent.com/s/s6xnu8gcal52iqj/Blue.mp3?dl=0" id="blue-eighties-audio" class="color-button-audio"></audio>
+    <!--80's Audio Misc Sounds-->
+    <audio src="https://dl.dropboxusercontent.com/s/bn8ubb258090thm/Round%20Win%20Eighties%20%281%29.mp3?dl=0" id="round-win-eighties-sound"></audio>
+    <!--<audio src="https://dl.dropboxusercontent.com/s/moxomncx03ybtnb/Round%20Win%20Eighties%20%282%29.mp3?dl=0" id="round-win-eighties-two-sound"></audio>-->
+    <audio src="https://dl.dropboxusercontent.com/s/5o83k2lnmyydu20/Game%20Win%20Eighties.mp3?dl=0" id="game-win-eighties-sound"></audio>
+    <audio src="https://dl.dropboxusercontent.com/s/d7bugi8zxw3wsq3/Game%20Over%20Eighties_01.mp3?dl=0" id="game-lose-eighties-sound"></audio>
+    <audio src="https://dl.dropboxusercontent.com/s/c6s42ohof1n5iq2/Normal%20Mistake%20Eighties%20.mp3?dl=0" id="normal-mistake-eighties-sound"></audio>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
